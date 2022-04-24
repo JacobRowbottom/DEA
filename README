@@ -1,0 +1,32 @@
+% The following contains the MATLAB code used within my Thesis 
+%for implementing DEA to approximate the Helmholtz equation in
+%two-dimensions as described in Chapter 4 of my Thesis.
+
+%For any questions please email me at: jacob.rowbottom2017@my.ntu.ac.uk
+
+%Please copy the Raw data from the corresponding files you wish to use and
+%save as mfiles with the same names as the ones labelled here.
+
+%The Main Script file to run is named DEA. The other files are the function files used within
+%the Script file. The Script file is annotated and explains which each variable or parameter is calculated. 
+%The files in the folder Distmesh are apart of the Distmesh package used to
+%calcualte the trinagular mesh used in the Figures in Chapter 4 of my
+%Thesis. To edit the size of the mesh please edit the value "PpOm" on line
+%287
+
+%Edit lines 19 - 24 to define the parameters used in DEA 
+
+%Edit lines 32 - 77 to change the number of domains and the coordinates of the vertices of the domain being considered.
+
+%Edit lines 99 and 101 to change the total number of directions in the global set and the step size of the 
+%boundary elements respectively.
+
+%Edit lines 250 - 282, to edit the problem set up for either the case when there is a source point 
+%inside the domain (Source = 1) or for the case when there is a line source travelling into the domain 
+%(Source = 0 ). For the case when Source = 1, edit lines 273 - 274 to edit
+%the coodinates of the source point. For the case when Source = 0 edit line
+%258 to change the angle the source travels into the domain.
+
+%Stage 4 at line 946 begins the computation of the final density defined sa FD in this code. 
+%Line 993 contains the function file used to define the exact solution given by equation (4.37) in my Thesis. 
+
